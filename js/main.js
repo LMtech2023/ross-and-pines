@@ -2,27 +2,20 @@
   "use strict";
 
   var burger = document.querySelector(".header__burger");
-  var menu = document.querySelector(".header__menu");
+  var mobileMenu = document.getElementById("mobile-menu");
 
-  if (burger && menu) {
+  if (burger && mobileMenu) {
     burger.addEventListener("click", function () {
-      menu.classList.toggle("header__menu--open");
+      mobileMenu.classList.toggle("header__mobile-menu--open");
     });
   }
 
-  var revealObserver = new IntersectionObserver(
-    function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("reveal--visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.12 }
-  );
+  var contactForm = document.getElementById("contact-form");
 
-  document.querySelectorAll(".reveal").forEach(function (el) {
-    revealObserver.observe(el);
-  });
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      alert("Thank you. A Ross & Pines team member will contact you shortly.");
+    });
+  }
 })();

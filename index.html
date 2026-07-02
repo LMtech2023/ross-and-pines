@@ -1,277 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ross &amp; Pines, LLC — Atlanta Trial Attorneys</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ross &amp; Pines, LLC | Atlanta Personal Injury, Criminal Defense &amp; Immigration Attorneys</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <div class="top-bar">
-    <div class="container top-bar__inner">
-      <div>Atlanta Trial Attorneys · Personal Injury · Criminal Defense · Immigration</div>
-      <div>
-        <span class="top-bar__phone">(888) 838-4858</span>
-        <span class="top-bar__langs"><a href="#">English</a><a href="#">Español</a></span>
+  <header class="header">
+    <div class="top-bar">
+      <div class="container top-bar__inner">
+        <div class="top-bar__address">5555 Glenridge Connector, Suite 435, Atlanta, GA 30342</div>
+        <div class="top-bar__links">
+          <a href="#">Espa&ntilde;ol</a>
+          <a href="#contact">Contact Us</a>
+          <a href="tel:8888384858">(888) 838-4858</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <header class="header">
-    <div class="container header__inner">
-      <a href="#" class="header__brand">
-        <img class="header__brand-logo" src="images/logo.png" alt="Ross & Pines, LLC">
-      </a>
-      <ul class="header__menu">
-        <li><a class="header__menu-link" href="#">Home</a></li>
-        <li><a class="header__menu-link" href="#about">Why Hire</a></li>
-        <li><a class="header__menu-link" href="#">Attorneys</a></li>
-        <li><a class="header__menu-link" href="#practice">Personal Injury</a></li>
-        <li><a class="header__menu-link" href="#practice">Criminal Defense</a></li>
-        <li><a class="header__menu-link" href="#practice">Immigration</a></li>
-        <li><a class="header__menu-link" href="#">Español</a></li>
-      </ul>
-      <div class="header__actions">
-        <a href="tel:8888384858" class="btn">Free Consultation</a>
-        <button class="header__burger" type="button" aria-label="Menu">
-          <span class="header__burger-line"></span>
-          <span class="header__burger-line"></span>
-          <span class="header__burger-line"></span>
-        </button>
+    <div class="header__nav">
+      <div class="container header__inner">
+        <a href="#home" class="header__logo">
+          <img class="header__logo-image" src="images/logo.png" alt="Ross & Pines, LLC">
+        </a>
+        <ul class="header__menu">
+          <li><a class="header__menu-link" href="#home">Home</a></li>
+          <li><a class="header__menu-link" href="#why-hire">Why Hire</a></li>
+          <li><a class="header__menu-link" href="#attorneys">Attorneys</a></li>
+          <li><a class="header__menu-link" href="#personal-injury">Personal Injury</a></li>
+          <li><a class="header__menu-link" href="#criminal-defense">Criminal Defense</a></li>
+          <li><a class="header__menu-link" href="#immigration">Immigration Law</a></li>
+        </ul>
+        <div class="header__actions">
+          <a href="#contact" class="btn">Schedule a Free Consultation</a>
+        </div>
+        <button class="header__burger" type="button" aria-label="Open menu">&#9776;</button>
       </div>
+
+      <nav class="header__mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="#home">Home</a>
+        <a href="#why-hire">Why Hire</a>
+        <a href="#attorneys">Attorneys</a>
+        <a href="#personal-injury">Personal Injury</a>
+        <a href="#criminal-defense">Criminal Defense</a>
+        <a href="#immigration">Immigration Law</a>
+        <a href="#">Espa&ntilde;ol</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#contact" class="btn btn--full">Schedule a Free Consultation</a>
+      </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="container hero__inner">
       <div class="hero__content">
-        <div class="hero__tagline">Commitment to You</div>
-        <h1 class="hero__title">Advocacy for your cause.<br><em class="hero__title-accent">Compassion for you.</em></h1>
-        <p class="hero__lead">A reputation built in the courtroom. For years, Ross &amp; Pines has stood beside Atlanta families with the skill, preparation, and resolve to win the results our clients deserve.</p>
+        <div class="hero__eyebrow">Ross &amp; Pines, LLC &middot; Atlanta, Georgia</div>
+        <h1>Commitment<br>to You.</h1>
+        <p class="hero__subtitle">Advocacy for your cause.
+Compassion for you.</p>
         <div class="hero__actions">
-          <a href="tel:8888384858" class="btn">Schedule a Free Consultation</a>
-          <a href="#practice" class="btn btn--ghost">Our Practice Areas</a>
+          <a href="#contact" class="btn">Schedule a Free Consultation</a>
+          <div class="hero__phone">
+            <div class="hero__phone-icon" aria-hidden="true">&#9742;</div>
+            <div>
+              <small class="hero__phone-label">Call 24/7</small>
+              <a href="tel:8888384858">(888) 838-4858</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="hero__portrait">
-        <img class="hero__portrait-image" src="images/hero-portrait.png" alt="The attorneys of Ross & Pines, LLC">
-        <div class="hero__badge">
-          <strong class="hero__badge-value">25+</strong>
-          <small class="hero__badge-label">Years in Trial</small>
-        </div>
+      <div class="hero__photo">
+        <img class="hero__photo-image" src="images/hero-portrait.png" alt="The attorneys of Ross & Pines, LLC">
       </div>
     </div>
   </section>
 
-  <div class="accolades">
+  <section class="accolades" id="why-hire">
     <div class="container accolades__inner">
-      <span class="accolades__label">Recognized For Results</span>
-      <div class="accolades__list">
-        <div class="accolades__item">
-          <span class="accolades__item-value">AV</span>
-          <span class="accolades__item-label">Preeminent</span>
-        </div>
-        <div class="accolades__item">
-          <span class="accolades__item-value">10.0</span>
-          <span class="accolades__item-label">Avvo Rating</span>
-        </div>
-        <div class="accolades__item">
-          <span class="accolades__item-value">Top 100</span>
-          <span class="accolades__item-label">Trial Lawyers</span>
-        </div>
-        <div class="accolades__item">
-          <span class="accolades__item-value">Super</span>
-          <span class="accolades__item-label">Lawyers</span>
-        </div>
-        <div class="accolades__item">
-          <span class="accolades__item-value">A+</span>
-          <span class="accolades__item-label">BBB Accredited</span>
-        </div>
+      <div class="accolades__item">
+        <div class="accolades__icon" aria-hidden="true">&#9825;</div>
+        <div class="accolades__text">Free Consultation<small>No Cost, No Obligation</small></div>
       </div>
-    </div>
-  </div>
-
-  <section class="intro" id="about">
-    <div class="container intro__grid">
-      <div class="intro__media reveal">
-        <span class="intro__accent"></span>
-        <img class="intro__media-image" src="images/intro.jpg" alt="Scales of justice in the Ross & Pines office">
-        <span class="intro__accent intro__accent--bottom-right"></span>
+      <div class="accolades__item">
+        <div class="accolades__icon" aria-hidden="true">&#128172;</div>
+        <div class="accolades__text">Se Habla Espa&ntilde;ol<small>Bilingual Legal Team</small></div>
       </div>
-      <div class="reveal">
-        <span class="eyebrow">Atlanta Attorneys</span>
-        <h2>Compassion. Commitment.<br>Advocacy.</h2>
-        <p>At Ross &amp; Pines, LLC, we share a commitment to uphold a high level of legal representation, excellence, and ethics that greatly impacts the results of our clients&rsquo; cases. Over the years, we have established a reputation for reliability and a track record of success&mdash;especially in the courtroom.</p>
-        <p>With proven skills in case investigation, case preparation, and, most importantly, case representation at trial, our team won&rsquo;t stop until we have the results that our clients deserve.</p>
-        <p class="intro__pull">Please contact us today at (888) 838-4858 to get legal advice for your situation.</p>
+      <div class="accolades__item">
+        <div class="accolades__icon" aria-hidden="true">&#9878;</div>
+        <div class="accolades__text">Atlanta-Based Advocates<small>Local Trial Experience</small></div>
+      </div>
+      <div class="accolades__item">
+        <div class="accolades__icon" aria-hidden="true">&#9733;</div>
+        <div class="accolades__text">Proven Courtroom Results<small>Reliable Track Record</small></div>
       </div>
     </div>
   </section>
 
-  <section class="practice" id="practice">
+  <section class="about" id="attorneys">
+    <div class="container about__grid">
+      <div class="about__media">
+        <img class="about__media-image" src="images/hero-portrait.png" alt="Ross & Pines attorneys in the office">
+      </div>
+      <div class="about__content">
+        <div class="eyebrow">Who We Are</div>
+        <h2>Atlanta Attorneys</h2>
+        <span class="section-sub">Compassion. Commitment. Advocacy.</span>
+        <p>At Ross &amp; Pines, LLC, we share a commitment to uphold a high level of legal representation, excellence, and ethics that greatly impacts the results of our clients&rsquo; cases. Over the years, we have established a reputation for reliability and a track record of success&mdash;especially in the courtroom. With proven skills in case investigation, case preparation, and, most importantly, case representation in trial, our team won&rsquo;t stop until we have the results that our clients deserve.</p>
+        <div class="about__callout">Please contact us today at (888) 838-4858 to get legal advice for your situation.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="practice">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">How We Help</span>
+      <div class="section-header">
+        <div class="eyebrow">What We Handle</div>
         <h2>Our Practice Areas</h2>
       </div>
-      <div class="practice__cards">
-        <a class="practice__card reveal" href="#">
-          <img class="practice__card-image" src="images/practice-injury.jpg" alt="Personal injury representation">
+      <div class="practice__grid">
+        <article class="practice__card" id="personal-injury">
+          <div class="practice__card-thumb">
+            <img src="images/practice-injury.jpg" alt="Personal injury representation">
+          </div>
           <div class="practice__card-body">
             <span class="practice__card-num">01</span>
             <h3>Personal Injury</h3>
+            <p>From automobile accidents to dog bite injuries, we investigate every detail of your case to secure the compensation you deserve.</p>
             <span class="link-more">Learn More &rarr;</span>
           </div>
-        </a>
-        <a class="practice__card reveal" href="#">
-          <img class="practice__card-image" src="images/hero-bg.jpg" alt="Criminal defense">
+        </article>
+        <article class="practice__card" id="criminal-defense">
+          <div class="practice__card-thumb">
+            <img src="images/practice-criminal.jpg" alt="Criminal defense">
+          </div>
           <div class="practice__card-body">
             <span class="practice__card-num">02</span>
             <h3>Criminal Defense</h3>
+            <p>When your freedom is on the line, our trial-tested attorneys stand beside you at every stage of the criminal justice process.</p>
             <span class="link-more">Learn More &rarr;</span>
           </div>
-        </a>
-        <a class="practice__card reveal" href="#">
-          <img class="practice__card-image" src="images/cta-bg.jpg" alt="Immigration law">
+        </article>
+        <article class="practice__card" id="immigration">
+          <div class="practice__card-thumb">
+            <img src="images/practice-immigration.jpg" alt="Immigration law">
+          </div>
           <div class="practice__card-body">
             <span class="practice__card-num">03</span>
             <h3>Immigration</h3>
+            <p>Our bilingual team guides individuals and families through the immigration process with clarity, care, and diligence.</p>
             <span class="link-more">Learn More &rarr;</span>
           </div>
-        </a>
+        </article>
       </div>
     </div>
   </section>
 
   <section class="results">
     <div class="container">
-      <span class="eyebrow">Proven In The Courtroom</span>
-      <h2>Case Results</h2>
+      <div class="section-header">
+        <div class="eyebrow">Track Record</div>
+        <h2>Case Results</h2>
+      </div>
       <div class="results__grid">
-        <div class="results__item reveal">
-          <div class="results__amount">$500K</div>
+        <div class="results__item">
+          <div class="results__amount">$500,000</div>
           <div class="results__desc">Automobile Accident Recovery</div>
-          <a class="link-more" href="#">Read More</a>
+          <div class="results__link">Read More</div>
         </div>
-        <div class="results__item reveal">
-          <div class="results__amount">$400K</div>
+        <div class="results__item">
+          <div class="results__amount">$400,000</div>
           <div class="results__desc">Motorcycle Accident Settlement</div>
-          <a class="link-more" href="#">Read More</a>
+          <div class="results__link">Read More</div>
         </div>
-        <div class="results__item reveal">
-          <div class="results__amount">$275K</div>
+        <div class="results__item">
+          <div class="results__amount">$275,000</div>
           <div class="results__desc">Automobile Accident Recovery</div>
-          <a class="link-more" href="#">Read More</a>
+          <div class="results__link">Read More</div>
         </div>
-        <div class="results__item reveal">
-          <div class="results__amount">$235K</div>
+        <div class="results__item">
+          <div class="results__amount">$235,000</div>
           <div class="results__desc">Dog Bite Injury Settlement</div>
-          <a class="link-more" href="#">Read More</a>
+          <div class="results__link">Read More</div>
         </div>
       </div>
+      <p class="results__disclaimer">Prior results do not guarantee a similar outcome. Every case is different and must be evaluated on its own merits.</p>
     </div>
   </section>
 
-  <section class="pillars">
-    <div class="container pillars__grid">
-      <div class="pillars__media reveal">
-        <img class="pillars__media-image" src="images/practice-injury.jpg" alt="Direct access to your attorney">
-        <div class="pillars__tag">What Sets Us Apart</div>
-      </div>
-      <div class="reveal">
-        <span class="eyebrow">Our Firm's Five Pillars of Practice</span>
+  <section class="values">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Our Firm&rsquo;s Five Pillars of Practice</div>
         <h2>What Sets Us Apart</h2>
-        <p class="pillars__subtitle">The standards that guide every case we take.</p>
-        <div class="pillars__item">
-          <div class="pillars__number">01</div>
-          <div>
-            <p>You will always meet with the attorney who is working on your case.</p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-        <div class="pillars__item">
-          <div class="pillars__number">02</div>
-          <div>
-            <p>You will be treated individually and with the utmost confidence and respect.</p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-        <div class="pillars__item">
-          <div class="pillars__number">03</div>
-          <div>
-            <p>Your case will be prepared thoroughly with a focus on achieving your goals.</p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-        <div class="pillars__item">
-          <div class="pillars__number">04</div>
-          <div>
-            <p>Your case will be meticulously investigated to uncover critical evidence.</p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
+      </div>
+      <div class="values__grid">
+        <article class="values__card">
+          <div class="values__number">01</div>
+          <h3>You will always meet with the attorney who is working on your case.</h3>
+          <span class="link-more">Read More</span>
+        </article>
+        <article class="values__card">
+          <div class="values__number">02</div>
+          <h3>You will be treated individually and with the utmost confidence and respect.</h3>
+          <span class="link-more">Read More</span>
+        </article>
+        <article class="values__card">
+          <div class="values__number">03</div>
+          <h3>Your case will be prepared thoroughly with a focus on achieving your goals.</h3>
+          <span class="link-more">Read More</span>
+        </article>
+        <article class="values__card">
+          <div class="values__number">04</div>
+          <h3>Your case will be meticulously investigated to uncover critical evidence.</h3>
+          <span class="link-more">Read More</span>
+        </article>
       </div>
     </div>
   </section>
 
   <section class="testimonial">
     <div class="container testimonial__inner">
-      <span class="eyebrow">Real Stories From Real People</span>
-      <div class="testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <h2>&ldquo;The ultimate professional.&rdquo;</h2>
-      <p class="testimonial__text">I could not recommend Tracy Dorfman any higher. She was meticulous in her preparation for my day in court &mdash; the ultimate professional. Her years of knowledge in the area of our case made my family feel at ease. She was accessible when we needed information, but what I felt was very important is that she showed a very human and compassionate side. We won our case with ease. My family will forever be in her debt.</p>
-      <div class="testimonial__author">Niall</div>
+      <div class="section-header">
+        <div class="eyebrow">Client Voices</div>
+      </div>
+      <div class="testimonial__quote-mark" aria-hidden="true">&ldquo;</div>
+      <h2>Real Stories
+From Real People</h2>
+      <div class="testimonial__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="testimonial__text">&ldquo;The ultimate professional.&rdquo; I could not recommend Tracy Dorfman any higher. She was meticulous in her preparation for my day in court&mdash;the ultimate professional. Her years of knowledge in the area of our case made my family feel at ease. She was accessible when we needed information on the case, but what I felt was very important is that she showed a very human and compassionate side and made my family feel at ease, enough to say we won our case with ease. My family will forever be in her debt.</p>
+      <div class="testimonial__author">&mdash; Niall</div>
     </div>
   </section>
 
-  <section class="cta">
-    <div class="container cta__inner">
-      <span class="eyebrow">Let's Talk</span>
-      <h2>Get the advocate your case deserves.</h2>
-      <p class="cta__text">Your consultation is free, confidential, and with the attorney who will handle your case. Reach out today and let us go to work for you.</p>
-      <a href="tel:8888384858" class="btn">Schedule a Free Consultation</a>
+  <section class="contact" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <div class="eyebrow">Get In Touch</div>
+        <h2>Schedule Your Free Consultation</h2>
+        <p>Tell us what happened. A member of our team will review your situation and respond promptly&mdash;in English or Espa&ntilde;ol.</p>
+        <div class="contact__detail">
+          <div class="contact__icon" aria-hidden="true">&#9742;</div>
+          <div>
+            <strong>Call Us</strong>
+            <span>(888) 838-4858</span>
+          </div>
+        </div>
+        <div class="contact__detail">
+          <div class="contact__icon" aria-hidden="true">&#128205;</div>
+          <div>
+            <strong>Visit Our Office</strong>
+            <span>5555 Glenridge Connector, Suite 435<br>Atlanta, GA 30342</span>
+          </div>
+        </div>
+        <div class="contact__detail">
+          <div class="contact__icon" aria-hidden="true">&#9200;</div>
+          <div>
+            <strong>Available</strong>
+            <span>24/7 &mdash; Free Consultations</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__form">
+        <h3>Request a Free Consultation</h3>
+        <span class="contact__form-sub">No cost. No obligation. Se habla Espa&ntilde;ol.</span>
+        <form id="contact-form">
+          <div class="contact__field">
+            <label for="f-name">Full Name</label>
+            <input type="text" id="f-name" name="name" placeholder="Jane Doe" required>
+          </div>
+          <div class="contact__field">
+            <label for="f-email">Email Address</label>
+            <input type="email" id="f-email" name="email" placeholder="jane@email.com" required>
+          </div>
+          <div class="contact__field">
+            <label for="f-phone">Phone Number</label>
+            <input type="tel" id="f-phone" name="phone" placeholder="(555) 555-5555" required>
+          </div>
+          <div class="contact__field">
+            <label for="f-new">Are You a New Client?</label>
+            <select id="f-new" name="new-client">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div class="contact__field">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" placeholder="Tell us briefly about your situation..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--navy">Schedule a Free Consultation</button>
+        </form>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <div class="footer__grid">
-        <div>
-          <div class="footer__brand">Ross&nbsp;<span class="footer__brand-accent">&amp;</span>&nbsp;Pines</div>
-          <p>A commitment to excellence, ethics, and the results our clients deserve. Serving Atlanta and the State of Georgia in personal injury, criminal defense, and immigration law.</p>
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="images/logo.png" alt="Ross & Pines, LLC">
+          <p>Compassion. Commitment. Advocacy. Serving Atlanta and the surrounding communities in personal injury, criminal defense, and immigration matters.</p>
         </div>
-        <div>
-          <h4 class="footer__heading">Practice Areas</h4>
-          <ul class="footer__list">
-            <li><a href="#">Personal Injury</a></li>
-            <li><a href="#">Criminal Defense</a></li>
-            <li><a href="#">Immigration Law</a></li>
-            <li><a href="#">Why Hire Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer__heading">Firm</h4>
-          <ul class="footer__list">
-            <li><a href="#">Our Attorneys</a></li>
-            <li><a href="#">Case Results</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer__heading">Contact</h4>
-          <div class="footer__phone">(888) 838-4858</div>
-          <p>5555 Glenridge Connector<br>Suite 435<br>Atlanta, GA 30342</p>
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h4>Navigate</h4>
+            <a href="#home">Home</a>
+            <a href="#why-hire">Why Hire</a>
+            <a href="#attorneys">Attorneys</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+          <div class="footer__column">
+            <h4>Practice Areas</h4>
+            <a href="#personal-injury">Personal Injury</a>
+            <a href="#criminal-defense">Criminal Defense</a>
+            <a href="#immigration">Immigration</a>
+          </div>
+          <div class="footer__column">
+            <h4>Contact</h4>
+            <span>(888) 838-4858</span>
+            <span>5555 Glenridge Connector<br>Suite 435, Atlanta, GA 30342</span>
+          </div>
         </div>
       </div>
       <div class="footer__bottom">
-        <span>&copy; 2026 Ross &amp; Pines, LLC. All rights reserved.</span>
-        <span>Attorney Advertising · Prior results do not guarantee a similar outcome.</span>
+        <span>&copy; 2026 Ross &amp; Pines, LLC. All Rights Reserved.</span>
+        <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Disclaimer</a></span>
       </div>
+      <p class="footer__disclaimer">Attorney Advertising. Past results afforded our clients do not guarantee a similar outcome. This website is for informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by viewing this site or submitting a contact form.</p>
     </div>
   </footer>
 
